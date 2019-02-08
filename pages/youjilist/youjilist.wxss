@@ -1,0 +1,132 @@
+/* pages/youjilist/youjilist.wxss */
+.CB{clear: both}
+.PA{position: absolute}
+.PR{position: relative}
+.FL{float: left}
+.FR{float: right}
+
+.seachlan{
+  width: 100%;
+  height: 90rpx;
+}
+.seach{
+  width: 600rpx;
+  height: 70rpx;
+  color:#a1a1a1;
+  line-height: 75rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  background: #f8f8f8;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+.seach image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top:15rpx;
+  margin-left: 160rpx;
+}
+.seach input{
+  margin: 10rpx;
+  width: 200rpx;
+}
+.jiao{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  width: 30rpx;
+  height: 40rpx;
+}
+.alltravels{
+  width: 90%;
+  margin: auto;
+  margin-top: 20rpx;
+  border-top: #a1a1a1 1rpx solid;
+}
+.bt{
+  margin-top: 30rpx;
+  font-size: 34rpx;
+  height: 60rpx;
+  width: 100%;
+}
+.youjibox{
+  height: 250rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.zb{
+  width: 70%;
+  height: 215rpx;
+}
+.yjbt{
+  font-size: 28rpx;
+  width: 100%;
+}
+.yjnr{
+  margin-top: 20rpx;
+  color: #565555;
+  font-size: 22rpx;
+  width: 100%;
+}
+.yjbq{
+  height: 90rpx;
+  width: 100%;
+   font-size: 20rpx;
+}
+.yjpic{
+  width: 27%;
+  height: 215rpx;
+}
+.yjpic image{
+  width: 100%;
+  height: 100%;
+}
+.dibul{
+  width: 165rpx;
+  height: 40rpx;
+  margin-top: 20rpx
+}
+.dibul image{
+  width: 35rpx;
+  height: 35rpx;
+}
+.dibul text{
+  margin-top: 10rpx;
+  color: #8a8a8a;
+}
+.dibur{
+  height: 40rpx;
+  margin-top: 30rpx;
+  width: 200rpx;
+}
+.eyebox {
+  margin-left: 10rpx;
+}
+.eyebox image{
+  width: 35rpx;
+  height: 28rpx;
+}
+
+/* 轮播 */
+.swiperClass {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+image.active {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}  
+
+image.quiet {
+  transform: scale(0.8333333);
+  transition: all 0.2s ease-in 0s;
+}

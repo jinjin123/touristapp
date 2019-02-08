@@ -1,0 +1,163 @@
+/* pages/indexguanzhu/indexguanzhu.wxss */
+.CB{clear: both}
+.PA{position: absolute}
+.PR{position: relative}
+.FL{float: left}
+
+.shangtiao{
+  height: 100rpx;
+  width: 100%;
+  background: #fcfcfc;
+}
+.seach{
+  width: 570rpx;
+  height: 65rpx;
+  border-radius: 30rpx;
+  border: #aaaa 1rpx solid;
+  margin-left:30rpx;
+  margin-top: 20rpx;
+}
+.seach image{
+  width: 40rpx;
+  height: 40rpx;
+  margin:15rpx;
+}
+.seach input{
+  margin: 5rpx;
+}
+.tixing{
+  width: 50rpx;
+  height: 55rpx;
+  margin-top: 20rpx;
+  margin-left: 55rpx;
+}
+.navtubiao{
+  width: 90%;
+  height: 180rpx;
+  margin: auto;
+  background: #fcfcfc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tubiao{
+  width: 100rpx;
+  height: 170rpx;
+  margin-left: 25rpx; 
+  
+}
+.tubiao image{
+  margin-top: 20rpx;
+  width: 100rpx;
+  height: 110rpx;
+}
+.text{
+  width: 100rpx;
+  height: 30rpx;
+  font-size: 26rpx;
+  color: #5d5d5d;
+  text-align: center;
+}
+.liebiao{
+  margin-top: 30rpx;
+  width: 90%;
+  height: 80rpx;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.lbdanxiang{
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  height: 75rpx;
+  line-height: 75rpx
+}
+.lbdanxiang:hover{
+  font-size: 34rpx;
+  border-bottom: 3rpx solid yellow;
+}
+.tx2{
+  width: 90%;
+  margin: auto;
+}
+.bt{
+  font-size: 32rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.tuce1{
+  
+  width: 100%;
+  background: white;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15rpx;
+}
+.image2{
+  width: 32%;
+  height: 170rpx;
+}
+.dilan{
+  width: 100%;
+  height: 110rpx;
+  border-bottom: #aaaa 1rpx solid;
+}
+.lanbox{
+  width: 70%;
+  height: 110rpx;
+  line-height: 110rpx;
+  color: #43b6ff;
+  font-size: 28rpx;
+}
+.lanbox text{
+  margin-left: 5rpx;
+}
+.zhanghao{
+  width: 30%;
+  height: 110rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+.zhanghao image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.tuce3{
+  width: 690rpx;
+  height: 350rpx;
+  margin-top: 10rpx;
+}
+.shipin1{
+  width: 690rpx;
+  height: 350rpx;
+}
+.bf0{
+  width: 110rpx;
+  height: 110rpx;
+  top: 120rpx;
+  left: 290rpx; 
+}
+.bf3{
+  width: 45rpx;
+  height: 50rpx;
+  top: 90rpx;
+  left: 220rpx;
+}
+.tuce2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tuce2 image{
+  width: 45%;
+  height: 300rpx;
+  float: left;
+}
+.wenzikong{
+  width: 50%;
+  font-size: 30rpx;
+  height: 300rpx;
+}

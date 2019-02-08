@@ -1,0 +1,72 @@
+<view class='container CB'>
+  <view class='shangtiao CB'>
+      <view class='seach FL'>
+        <image class='FL' src='{{czy.sybj}}'></image>
+        <input class='FL' placeholder="春节旅游最佳去处"></input>
+      </view>
+      <image class='tixing FL' src='{{czy.sytixing}}'></image>
+  </view>
+  <view class='navtubiao CB'>
+      <view class='tubiao  FL' wx:for="{{czy.sygl}}" wx:for-index="index">
+        <image src='{{item.sygltu}}'></image>
+        <view class='text'>{{item.sygonglue}}</view>
+      </view>  
+  </view>
+  <view class='liebiao CB'>
+      <view class='lbdanxiang FL' wx:for="{{czy.syliebiao}}"  wx:for-index="index" >{{item.lbdanxiang}}</view>
+  </view>
+  <view class='tx2'>
+      <view class='bt'>{{czy.sytjbt}}</view>
+       <view class='tuce1'>
+          <image class='image2' src='{{czy.sytjffz3}}'></image>
+          <image class='image2' src='{{czy.sytjffz4}}'></image>
+          <image class='image2' src='{{czy.sytjffz5}}'></image>
+      </view>
+      <view class='dilan'>
+        <view class='lanbox FL'>
+          <text>{{czy.sytjzmy}}</text><text>{{czy.sytjyy}}</text><text>{{czy.sytjswhy}}</text>
+        </view>
+        <view class='zhanghao FL'>
+          <image src='{{czy.sytjZH}}'></image>
+          <text>{{czy.sytjZHtext}}</text>
+        </view>
+      </view>
+  </view>
+
+ <view class='tx2'>
+      <view class='bt'>{{czy.sytjbt}}</view>
+      <view class='tuce3 '>
+      <image class='shipin1 PA' src='{{czy.sygztuceC}}'></image>
+      <image class='bf0 PR' src='{{czy.sygztuceCbf0}}'></image>
+      <image class='bf3 PR' src='{{czy.sygztuceCbf3}}'></image>
+    </view>
+      <view class='dilan'>
+        <view class='lanbox FL'>
+          <text>{{czy.sytjzmy}}</text><text>{{czy.sytjyy}}</text><text>{{czy.sytjswhy}}</text>
+        </view>
+        <view class='zhanghao FL'>
+          <image src='{{czy.sytjZH}}'></image>
+          <text>{{czy.sytjZHtext}}</text>
+        </view>
+      </view>
+  </view>
+
+<view class='tx2'>
+      <view class='bt'>{{czy.sytjbt}}</view>
+      <view class='tuce2'>
+        <image src='{{czy.sygztuceB}}'></image>
+        <view class='wenzikong FL'>{{czy.sytjwenzikong}}</view>
+      </view>
+      <view class='dilan'>
+        <view class='lanbox FL'>
+          <text>{{czy.sytjzmy}}</text><text>{{czy.sytjyy}}</text><text>{{czy.sytjswhy}}</text>
+        </view>
+        <view class='zhanghao FL'>
+          <image src='{{czy.sytjZH}}'></image>
+          <text>{{czy.sytjZHtext}}</text>
+        </view>
+      </view>
+  </view>
+
+
+</view>

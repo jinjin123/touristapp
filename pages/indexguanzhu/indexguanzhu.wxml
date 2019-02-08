@@ -1,0 +1,106 @@
+<view class='CB'>
+  <view class='shangtiao CB'>
+      <view class='seach FL'>
+        <image class='FL' src='{{czy.sybj}}'></image>
+        <input class='FL' placeholder="春节旅游最佳去处"></input>
+      </view>
+      <image class='tixing FL' src='{{czy.sytixing}}'></image>
+  </view>
+  <view class='navtubiao CB'>
+      <view class='tubiao  FL' wx:for="{{czy.sygl}}" wx:for-index="index">
+        <image src='{{item.sygltu}}'></image>
+        <view class='text'>{{item.sygonglue}}</view>
+      </view>  
+  </view>
+  <view class='liebiao CB'>
+      <view class='lbdanxiang FL' wx:for="{{czy.syliebiao}}"  wx:for-index="index" >{{item.lbdanxiang}}</view>
+  </view>
+  <view class='tx1'>
+    <view class='zhanghao PR'>
+      <image class='ffz' src='{{czy.sygztx1}}'></image>
+      <text class='ffz-nc PA'>{{czy.sygzfenfenzhi}}</text>
+      <text class='ffz-sj PA'>{{czy.sygzdayago}}</text>
+    </view>
+      <view class='tuce1' >
+          <image class='image1' src='{{czy.sygztuce1}}'></image>
+          <image class='image1' src='{{czy.sygztuce2}}'></image>
+          <image class='image2' src='{{czy.sygztuce3}}'></image>
+          <image class='image2' src='{{czy.sygztuce4}}'></image>
+          <image class='image2' src='{{czy.sygztuce5}}'></image>
+      </view>
+      <view class='wenzi1'>
+        {{czy.sygzwenzi1}}
+      </view>
+      <view class='biaoji'>
+        <view class='dibiao'>
+          <image class='FL' src='{{czy.sygzzuobiao1}}'></image>
+          <text class='FL'>{{czy.sygzshanghai}}</text>
+        </view>
+        <view class='dibiao'>
+          <view class='xxz FL'  wx:for="{{czy.sygzdilan}}" wx:for-index="index">
+            <image class='FL' src='{{item.hongxin}}'></image>
+            <text>{{item.shuzi1}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='pinglun' wx:for="{{czy.sygzpinglun}}" wx:for-index="index">
+        <text class='syd'>{{item.nicheng}}</text>
+        <text class='qyd'>{{item.neirong}}</text>
+      </view>
+      <view class='gdhf'>{{czy.sygzgengduohuifu}}</view>
+  </view>
+
+ <view class='tx1'>
+    <view class='zhanghao PR'>
+      <image class='ffz' src='{{czy.sygztx1}}'></image>
+      <text class='ffz-nc PA'>{{czy.sygzfenfenzhi}}</text>
+      <text class='ffz-sj PA'>{{czy.sygzdayago}}</text>
+    </view>
+    <view class='tuce2'>
+      <image src='{{czy.sygztuceB}}'></image>
+    </view>
+    <view class='biaoji'>
+        <view class='dibiao'>
+          <image class='FL' src='{{czy.sygzzuobiao1}}'></image>
+          <text class='FL'>{{czy.sygzshanghai}}</text>
+        </view>
+        <view class='dibiao'>
+          <view class='xxz FL'  wx:for="{{czy.sygzdilan}}" wx:for-index="index">
+            <image class='FL' src='{{item.hongxin}}'></image>
+            <text>{{item.shuzi1}}</text>
+          </view>
+        </view>
+      </view>
+ </view>
+
+<view class='tx1'>
+    <view class='zhanghao PR '>
+      <image class='ffz' src='{{czy.sygztx1}}'></image>
+      <text class='ffz-nc PA'>{{czy.sygzfenfenzhi}}</text>
+      <text class='ffz-sj PA'>{{czy.sygzdayago}}</text>
+    </view>
+    <view class='tuce3 '>
+      <image class='shipin1 PA' src='{{czy.sygztuceC}}'></image>
+      <image class='bf0 PR' src='{{czy.sygztuceCbf0}}'></image>
+      <image class='bf3 PR' src='{{czy.sygztuceCbf3}}'></image>
+    </view>
+    <view class='wenzi1'>
+      <text class='wenzibt'> {{czy.sygzwenzibt}} </text> {{czy.sygzwenzi1}}
+      </view>
+    <view class='biaoji'>
+        <view class='dibiao'>
+          <image class='FL' src='{{czy.sygzzuobiao1}}'></image>
+          <text class='FL'>{{czy.sygzshanghai}}</text>
+        </view>
+        <view class='dibiao'>
+          <image class='FL' src='{{czy.sygzzuobiao1}}'></image>
+          <text class='FL'>{{czy.sygzshanghai}}</text>
+        </view>
+    </view>
+   <view class='pinglun' wx:for="{{czy.sygzpinglun}}" wx:for-index="index">
+        <text class='syd'>{{item.nicheng}}</text>
+        <text class='qyd'>{{item.neirong}}</text>
+      </view>
+      <view class='gdhf'>{{czy.sygzgengduohuifu}}</view>
+</view>
+</view>

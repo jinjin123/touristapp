@@ -1,0 +1,321 @@
+/* pages/store/store.wxss */
+/* 头部导航 */
+.header{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: white;
+}
+.header .headertu{
+  position: absolute;
+  width: 6%;
+  height: 50rpx;
+  display: flex;
+  top: 23%;
+  left: 30rpx;
+}
+.header .searchBar{
+  width: 55%;
+  height: 70rpx;
+  padding-left: 120rpx;
+  border-radius: 80rpx;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 110rpx;
+  margin-top: -35rpx;
+  border: 1rpx  #b5b3b2 solid;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+}
+.header .headertu1{
+  position: absolute;
+  width: 6%;
+  height: 50rpx;
+  display: flex;
+  top: 25%;
+  left: 680rpx;
+}
+.header .searchBar text{
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  color: #b5b3b2;
+}
+/* 头部导航 */
+/* 轮播图 */
+.content{
+  width: 100%;
+  padding-top: 0rpx;
+  margin-top: 30rpx;
+}
+.bannerSwiper{
+  width: 90%;
+  height: 300rpx;
+}
+.bannerSwiper image{
+  width: 100%;
+  height: 100%;
+}
+/* 轮播图 */
+/* 图标 */
+.types{
+  width: 100%;
+  height: 340rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.types .typeItem{
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.types .typeItem image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.types .typeItem text{
+  font-size: 26rpx;
+  color: #5d5d5d;
+}
+/* 图标 */
+/* 限时特价 */
+.section{
+  margin-top: -160rpx;
+  width: 100%;
+  background-color: white;
+}
+.section .contentWrapper{
+  padding: 0 20rpx;
+}
+/* 标题 */
+.biaoti{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 36rpx;
+  border-top: 1rpx #a1a1a12a solid;
+}
+.gang{
+  height: 35rpx;
+  width: 5rpx;
+  background-color:#ff4a4a;
+  border-radius: 10rpx; 
+  margin-left: 25rpx;
+}
+.gang1{
+  height: 35rpx;
+  width: 5rpx;
+  background-color:#e4ff4a;
+  border-radius: 10rpx; 
+  margin-left: 25rpx;
+}
+.biaoti1{
+  margin-right: 360rpx;
+  font-weight: bold;
+}
+.biaoti2{
+  font-size: 26rpx;
+  color:#a1a1a1;
+  margin-right: 50rpx;
+}
+/* 标题 */
+.sale .contentWrapper{
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sale .contentWrapper .likeItem{
+  width: 49%;
+  height: 450rpx;
+}
+.sale .contentWrapper .likeItem .imgBox{
+  position: relative;
+  width: 100%;
+  height: 260rpx;
+}
+.sale .contentWrapper .likeItem .imgBox image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20rpx;
+}
+.sale .contentWrapper .likeItem .imgBox .type{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  color:white;
+  background-color: #ff4a4a;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  border-top-right-radius: 0;
+  font-size: 28rpx;
+}
+.sale .contentWrapper .likeItem .title{
+  color:black;
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+  font-size: 32rpx;
+}
+.ellipsis-two{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+.sale .contentWrapper .likeItem .info{
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.sale .contentWrapper .likeItem .info .price{
+  color:#ff5000;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.danwei{
+  color: #a1a1a1;
+  font-size: 26rpx;
+  font-weight: normal;
+}
+/* 限时特价 */
+/* 精选折扣 */
+.feedList{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.feedList .content{
+  width: 100%;
+  margin-top: 0rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.feedList .topic image{
+  width: 95%;
+  height: 250rpx;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+}
+.feedList .topictitle{
+  font-size: 32rpx;
+  width: 70%;
+  left: 130rpx;
+  position: absolute;
+}
+.feedList .topictitle .topictext{
+  top: -190rpx;
+  color: white;
+  position: absolute;
+}
+/* 精选折扣 */
+/* 当季热门 */
+.hot{
+  width: 100%;
+}
+.stations{
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.stations .stationItem{
+  width: 230rpx;
+  height: 280rpx;
+}
+.stations .stationItem .stationImg{
+  position: relative;
+  width: 100%;
+  height: 200rpx;
+}
+.stations .stationItem .stationImg image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.stations .stationItem .stationImg view{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 32rpx;
+  color: white;
+  text-align: center;
+  height: 40rpx;
+  line-height: 30rpx;
+  padding: 0 20rpx;
+}
+/* 当季热门 */
+/* 猜你喜欢 */
+.love .contentWrapper{
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+.love .contentWrapper .likeItem{
+  width: 49%;
+  height: 450rpx;
+}
+.love .contentWrapper .likeItem .imgBox{
+  position: relative;
+  width: 100%;
+  height: 240rpx;
+}
+.love .contentWrapper .likeItem .imgBox image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+}
+
+.love .contentWrapper .likeItem .title{
+  color:black;
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+  font-size: 32rpx;
+}
+.love .contentWrapper .likeItem .info{
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.love .contentWrapper .likeItem .info .price{
+  color:#ff5000;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.bottomTips{
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  color: #747675;
+}

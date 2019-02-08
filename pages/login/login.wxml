@@ -1,0 +1,26 @@
+<view class="section" >
+<view class='bj PS'>
+<image src='{{czy.denglubj}}'></image>
+</view>
+  <form bindsubmit="bindFormSubmit" >
+  <view class='dlbiaodan '>
+  <view class='denglubt'>{{czy.dengludenglu}}</view>
+    <view class="section mt150 line">
+      <input type="text" name="name" placeholder="请输入手机号/邮箱" />
+    </view>
+    <view class="section line mt50">
+      <input password type="text" name="password" placeholder="请输入密码" />
+    </view>
+    <view class='wjmm'>{{czy.dengluwjmm}}</view>
+    <button form-type="submit" class='anniu'>{{czy.dengludenglu}}</button>
+
+    <view class='dsf'>{{czy.dengludsf}}</view>
+    <view class='tb'>
+      <image src='{{czy.denglutubiao1}}'></image>
+      <image src='{{czy.denglutubiao2}}'></image>
+      <image src='{{czy.denglutubiao3}}'></image>
+    </view>
+    </view>
+  </form>
+
+</view>

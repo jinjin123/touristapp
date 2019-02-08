@@ -1,0 +1,112 @@
+/* pages/me/me.wxss */
+.userInfo{
+  width: 100%;
+  height: 220rpx;
+  display: flex;
+  align-items: center;
+  background-color: #ffde00;
+  padding-left: 40rpx;
+  position: relative;
+}
+.userInfo image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-top: -100rpx;
+}
+.userInfo .username{
+  margin-left: 30rpx;
+  left: 200rpx;
+  font-size: 34rpx;
+  color: black;
+  margin-top: -150rpx;
+}
+.userInfo .username .level{
+  font-size: 20rpx;
+  padding: 3rpx;
+  color: black;
+  border-radius: 10rpx;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.userdata .fans{
+  position: absolute;
+  right: 470rpx;
+  color: black;
+  top: 90rpx;
+}
+.fansnum{
+  font-size: 32rpx;
+}
+.userdata .follow{
+  position: absolute;
+  right: 300rpx;
+  color: black;
+  top: 90rpx;
+}
+.follownum{
+  font-size: 32rpx;
+}
+.userdata .dynamic{
+  position: absolute;
+  right: 150rpx;
+  color: black;
+  top: 90rpx;
+}
+.dynamicnum{
+  font-size: 32rpx;
+}
+.userbox{
+  width: 90%;
+  height: 180rpx;
+  background-color: white;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  top: 160rpx;
+  position: absolute;
+}
+.userbox .userboxItem{
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userbox .userboxItem image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.userbox .userboxItem text{
+  font-size: 28rpx;
+  color: #5d5d5d;
+  margin-top: 10rpx;
+}
+
+
+.normalBar{
+  width: 100%;
+  height: 80rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  top: 160rpx;
+  position: relative;
+  font-size: 28rpx;
+  border-top: 1rpx #a1a1a12a solid;
+}
+.normalBar image{
+  width: 45rpx;
+  height: 45rpx;
+  margin-left: 25rpx;
+}
+.normalBar .usertitle{
+  margin-left: 25rpx;
+}
+.normalBar .fuhao{
+  font-size: 40rpx;
+  color: #a1a1a1;
+  left: 680rpx;
+ position: absolute;
+}

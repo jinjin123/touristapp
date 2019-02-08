@@ -1,0 +1,29 @@
+<!--pages/me/me.wxml-->
+<view class='container '>
+
+<view class='userInfo '>
+    <image src='{{userImg}}'/>
+    <text class='username'>{{userName}} <text class='level'>{{userlevel}}</text></text>
+    <view class='userdata'>
+    <text class='fans'>粉丝 <text class='fansnum'>{{fansnum}}</text></text>
+    <text class='follow'>关注 <text class='follownum'>{{follownum}}</text></text>
+    <text class='dynamic'>动态 <text class='dynamicnum'>{{dynamicnum}}</text></text>
+    </view>
+  </view>
+
+  <view class='userbox '>
+    <block wx:for="{{userbox}}" wx:key="{{index}}">
+        <view class='userboxItem'>
+          <image src="{{item.imgUrl}}"/>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+  </view>
+
+<view class='normalBar ' wx:for="{{normalBar}}" wx:key="{{index}}">
+          <image src="{{item.img}}"/>
+          <text class='usertitle'>{{item.usertitle}}</text>
+          <text class='fuhao'>></text>
+  </view>
+
+</view>

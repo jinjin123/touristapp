@@ -1,0 +1,26 @@
+<!--pages/addyouji/addyouji.wxml-->
+<view class='CB'>
+<view class='tou PR '>
+  <image src='../images/czy/xyj-x.png'></image>
+  <view class='ccg PA'>存草稿</view>
+  <view class='fb PA'>发表</view>
+</view>
+<view class='tjfm PR'>
+      <image class='uplodbox PA' src='../images/czy/xyj-zfx.png'></image>
+      <image class='uplodjia PA' src='../images/czy/xyj-jia.png'></image>
+      <text class='uplodfm PA'>添加封面</text>
+</view>
+<view class='uploabt'>
+  <image class='FL' src='../images/czy/xyj-qianbi.png'></image>
+  <input class='FL' placeholder="点击添加游记标题"></input>
+</view>
+<view class='srzw'>
+  <textarea placeholder="点击输入正文..."></textarea>
+</view>
+<view class='dibu'>
+  <image class='FL' src='../images/czy/xyj-bq.png'></image>
+  <text class='FL'>添加标签</text>
+  <image class='FL' src='../images/czy/xyj-tjtp.png'></image>
+  <text class='FL'>添加图片</text>
+</view>
+</view>

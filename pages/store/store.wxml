@@ -1,0 +1,111 @@
+<!--pages/store/store.wxml-->
+<view class='container'>
+
+  <view class='header'>
+  <image class='headertu' src='/images/icon/time.png'></image>
+    <navigator url="../search/search" open-type="navigate" class='searchBar'>
+        <icon type="search" size='16'/>
+        <text>日本拒签全退</text>
+    </navigator>
+     <image class='headertu1' src='/images/icon/xinxi.png'></image>
+  </view>
+   <view class='container content'>
+    <swiper class='bannerSwiper' indicator-dots="{{true}}" indicator-color="rgba(255,255,255,0.3)" indicator-active-color="#5d5d5d"
+      autoplay="{{true}}" interval="6000" duration="500" circular="{{true}}" >
+      <block wx:for="{{bannerUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class='types'>
+      <block wx:for="{{types}}" wx:key="{{index}}">
+        <view class='typeItem'>
+          <image src="{{item.imgUrl}}"/>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+      <view class='section sale'>
+      <view class='biaoti'>
+      <view class='gang'></view>
+      <text class='biaoti1'>限时特价</text>
+      <text class='biaoti2'>查看更多 ></text>
+      </view>
+      <view class='contentWrapper'>
+        <view class='likeItem' wx:for="{{sale}}" wx:key="{{index}}">
+          <view class='imgBox'>
+            <image src='{{item.img}}'/>
+            <view class='type'>{{item.type}}</view>
+          </view>
+          <view class='title ellipsis-two'>{{item.title}}</view>
+          <view class='info'>
+            <text class='price'>¥{{item.price}} <text class='danwei'>元起</text></text>
+          </view>
+        </view>
+      </view>
+   
+
+<view class='discount'>
+ <view class='biaoti'>
+      <view class='gang1'></view>
+      <text class='biaoti1'>精选折扣</text>
+      <text class='biaoti2'>查看更多 ></text>
+      </view>
+
+ <view class='feedList'>
+    <view class='content topic'>
+    <view class='discountItem' wx:for="{{discount}}" wx:key="{{index}}">
+      <image src='{{item.img1}}'></image>
+      <view class='topictitle'>
+        <text class='topictext'>{{item.text}}</text>
+    </view>
+  </view>
+ </view>
+  </view>
+</view>
+   </view>
+
+<view class='hot'>
+<view class='biaoti'>
+      <view class='gang1'></view>
+      <text class='biaoti1'>当季热门</text>
+      <text class='biaoti2'>查看更多 ></text>
+      </view>
+<view class='stations'>
+          <view class='stationItem' wx:for="{{station}}" wx:key="{{index}}">
+            <view class='stationImg'>
+              <image src="{{item.img}}"/>
+              <view>{{item.name}}</view>
+            </view>
+          </view>
+        </view>
+     </view>  
+
+<view class='love'>
+<view class='biaoti'>
+      <view class='gang1'></view>
+      <text class='biaoti1'>猜你喜欢</text>
+      <text class='biaoti2'>查看更多 ></text>
+      </view>
+      <view class='contentWrapper'>
+        <view class='likeItem' wx:for="{{love}}" wx:key="{{index}}">
+          <view class='imgBox'>
+            <image src='{{item.img}}'/>
+          </view>
+          <view class='title ellipsis-two'>{{item.title}}</view>
+          <view class='info'>
+            <text class='price'>¥{{item.price}} <text class='danwei'>元起</text></text>
+          </view>
+          </view>
+          </view>
+</view>
+
+<view class='bottomTips'>
+    想和朋友们分享这个优惠吗？立即分享
+  </view>
+
+   </view>

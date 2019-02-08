@@ -1,0 +1,53 @@
+/* pages/dlzhuce/dlzhuce.wxss */
+.PA{position: absolute;}
+.PR{position: relative;}
+.t200{top: 200rpx;left: 130rpx}
+.t270{top: 270rpx;left: 130rpx}
+
+.bj image{
+  width: 100%;
+  height: 1300rpx;
+}
+.xgyg{
+  width: 175rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  color: white;
+  background:rgba(255,255,255,0.4 );
+  left: 550rpx;
+  top:100rpx;
+  line-height: 70rpx;
+  text-align: center;
+}
+.nihao{
+  font-size: 54rpx;
+  font-family: '黑体';
+  width: 550rpx;
+  height: 60rpx;
+  color: white;
+
+}
+.zy{
+  width: 550rpx;
+  height: 50rpx;
+  font-size: 36rpx;
+  left: 130rpx;
+  top: 385rpx;
+  color: white;
+}
+.anniu{
+  width: 505rpx;
+  height: 105rpx;
+  border-radius: 15rpx;
+  color: white;
+}
+.denglu{
+  background:rgba(255,255,255,0.6 );
+  top: 860rpx;
+  left: 130rpx;
+}
+.zhuce{
+  background:rgba(255,255,255,0.3 );
+  top: 1000rpx;
+  left: 130rpx;
+}

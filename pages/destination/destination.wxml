@@ -1,0 +1,74 @@
+<!--pages/destination/destination.wxml-->
+<view class='container'>
+  <swiper class='header' indicator-dots="{{true}}" indicator-color="rgba(255,255,255,0.3)" indicator-active-color="#5d5d5d"
+    autoplay="{{false}}" duration="500" circular="{{true}}" >
+    <swiper-item class="swiperItem">
+        <image src="{{czy.mddbj}}"/>
+        <view class='placeInfo'>
+          <view class='left'>
+            <text class='name'>广州</text>
+            <navigator url="../search/search" open-type="navigate" class='searchBar'>
+        <icon type="search" size='16'/>
+        <text>搜索当地玩乐、美食</text>
+    </navigator>
+            <text class='weather'>17℃</text>
+          </view>
+        </view>
+    </swiper-item>
+    <swiper-item class="normalItem">
+      <image src="../images/czy/mdd-duoyun.png"/>
+    </swiper-item>
+  </swiper>
+
+<view class='types'>
+      <block wx:for="{{czy.mddtypes}}"  wx:for-index="index">
+        <view class='typeItem'>
+          <image src="{{item.imgUrl}}"/>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+
+      <view class='section playhot'>
+       <view class='biaoti'>
+      <view class='gang'></view>
+      <text class='biaoti1'>玩法推荐</text>
+      <text class='biaoti2'>查看更多 ></text>
+      </view>
+      <view class='contentWrapper'>
+        <view class='playItem' wx:for="{{czy.mddplayhot}}" wx:for-index="index">
+          <image src='{{item.img}}'/>
+          <text class='tips ellipsis'>{{item.intro}}</text>
+        </view>
+      </view>
+    </view>
+
+<view class='section trip'>
+      <view class='biaoti'>
+      <text class='biaoti3'>广州·正在旅行</text>
+      </view>
+      <view class='contentWrapper'>
+        <view class='likeItem' wx:for="{{czy.mddtrip}}" wx:for-index="index">
+          <view class='imgBox'>
+            <image src='{{item.img}}'/>
+          </view>
+          <view class='introbox'>
+          <image class='touxiang' src='{{item.img1}}'></image>
+          <text class='user'>{{item.user}}</text>
+          <view class='title ellipsis'>{{item.title}}</view>
+          <view class='info'>
+            <text class='time'>{{item.time}}</text>
+            <image class='heart' src='{{item.img2}}'></image>
+            <text class='num'>{{item.peopleNum}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+<view class='bottomTips'>
+    想和朋友们分享这个目的地吗？立即分享
+  </view>
+
+  </view>
+
+  

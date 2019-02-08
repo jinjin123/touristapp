@@ -1,0 +1,81 @@
+<!--pages/youjilist/youjilist.wxml-->
+<view class='seachlan'>
+  <image class='jiao FL' src='../images/czy/gonglue-jiao.png'></image>  
+  <view class='seach FL'>
+    <image class='FL' src='../images/czy/gonglue-seach.png'></image>
+    <input class='FL' placeholder="搜索游记"></input>
+  </view>
+</view>
+
+
+<!-- 轮播 -->
+
+  <swiper class='swiperClass' autoplay indicator-color="#a39f99" indicator-active-color="#f49641" indicator-dots  interval="2000" duration="1000" previous-margin="30px" next-margin="30px" circular bindchange="bindchange" style='height: {{swiperHeight}}px'>
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : 'quiet'}}" mode='aspectFill'>
+        </image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+<!-- 轮播 -->
+
+<view class='alltravels'>
+  <view class='bt'>全部游记</view>
+  <view class='youjibox'>
+  <view class='zb FL'>
+    <view class='yjbt '>4000公里在路上，去追逐新疆的草
+原与雪山｜伊犁小伊犁小环线</view>
+    <view class='yjnr '>在中国的版图上，西藏和新疆是两块神秘而令人
+向往的土地，因为遥远、因为高海拔、因为一天</view>
+    <view class='yjbq '>
+      <view class='dibul FL'>
+        <image class=' tx' src='../images/czy/yj-tx2.png'></image>
+        <text class='nicheng PA'>Yozuki毛毛酱</text>
+      </view>
+      <view class='dibur FR'>
+          <view class='eyebox FL'>
+            <image src='../images/czy/yj-eye.png'></image>
+            33502
+          </view>
+          <view class='eyebox FL'>
+            <image src='../images/czy/yj-email.png'></image>
+            199
+          </view>
+      </view>
+    </view>
+  </view>
+    <view class='yjpic FL'>
+      <image src='../images/czy/yj-qbyj1.png'></image>
+    </view>
+  </view>
+
+<view class='youjibox'>
+  <view class='zb FL'>
+    <view class='yjbt '>{{czy.yjlbt}}</view>
+    <view class='yjnr '>{{czy.yjlwz}}</view>
+    <view class='yjbq '>
+      <view class='dibul FL'>
+        <image class=' tx' src='{{czy.yjlhead}}'></image>
+        <text class='nicheng PA'>{{czy.yjpname}}</text>
+      </view>
+      <view class='dibur FR'>
+          <view class='eyebox FL'>
+            <image src='{{czy.yjpeye}}'></image>
+            {{czy.yjpeyen}}
+          </view>
+          <view class='eyebox FL'>
+            <image src='{{czy.yjpemail}}'></image>
+            {{czy.yjpemailn}}
+          </view>
+      </view>
+    </view>
+  </view>
+    <view class='yjpic FL'>
+      <image src='{{czy.yjpface}}'></image>
+    </view>
+  </view>
+
+</view>

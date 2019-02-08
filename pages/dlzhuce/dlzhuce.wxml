@@ -1,0 +1,11 @@
+ <!--pages/dlzhuce/dlzhuce.wxml-->
+
+    <view class='bj PR'>
+    <image src="{{czy.zhucebj}}"></image>
+    <view class='xgyg PA'>{{czy.zhucetext1}}</view>
+    <view class='nihao PA t200'>{{czy.zhucetext2}}</view>
+    <view class='nihao PA t270'>{{czy.zhucetext3}}</view>
+    <view class='zy PA '>{{czy.zhucetext4}}</view>
+    <button form-type="submit" class='anniu PA denglu' catchtap="denglu">{{czy.zhuceanniu1}}</button>
+    <button form-type="submit" class='anniu PA zhuce'>{{czy.zhuceanniu2}}</button>
+    </view>

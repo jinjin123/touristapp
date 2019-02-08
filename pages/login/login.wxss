@@ -1,0 +1,70 @@
+/* pages/login/login.wxss */
+.mt150{margin-top: 150rpx;}
+.mt50{margin-top: 50rpx;}
+
+.denglubt{
+  font-family: pingFang;
+  font-size: 40rpx;
+  color: black;
+  margin-top:40rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.line{
+  margin-left: 67rpx;
+  border-bottom: #aaaa 1rpx solid;
+  color: #aaaa;
+  font-size: 28rpx;
+  height: 55rpx;
+  width: 555rpx;
+}
+
+.bj image{
+  width: 100%;
+  height: 330rpx;
+
+}
+.PS{
+  position: relative;
+}
+.dlbiaodan{
+  width:690rpx;
+  height: 995rpx;
+  border-radius: 20rpx;
+  background: white;
+  box-shadow: 0rpx 5rpx 10rpx 5rpx rgb(141, 140, 140);
+  position: absolute;
+  top: 230rpx;
+  left: 30rpx;
+}
+.wjmm{
+  color: #636161;
+  font-size: 28rpx;
+  width: 150rpx;
+  height: 40rpx;
+  margin: 50rpx 480rpx;
+}
+.anniu{
+  height: 80rpx;
+  width: 555rpx;
+  background: linear-gradient(to top, #ffb400, #ffd800);
+  color: white;
+}
+.dsf{
+  width: 555rpx;
+  height: 60rpx;
+  color: #636161;
+  margin-top: 150rpx;
+  margin-left: 70rpx;
+  font-size: 26rpx;
+}
+.tb{
+  width:555rpx;
+  height: 80rpx;
+  margin: auto;
+}
+.tb image{
+  width: 55rpx;
+  height: 50rpx;
+  margin: 60rpx
+}

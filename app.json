@@ -1,0 +1,60 @@
+﻿{
+  "pages": [
+    "pages/dlzhuce/dlzhuce",
+    "pages/login/login",
+    "pages/indexguanzhu/indexguanzhu",
+    "pages/indextuijian/indextuijian",
+    "pages/tianjia/tianjia",
+    "pages/gongluefl/gonglluefl",
+    "pages/addyouji/addyouji",
+    "pages/youjipage/youjipage",
+    "pages/youjilist/youjilist",
+    "pages/store/store",
+    "pages/destination/destination",
+    "pages/me/me",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "超自游",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "black",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/indexguanzhu/indexguanzhu",
+        "text": "首页",
+        "iconPath": "pages/images/czy/wodeshouyen.png",
+        "selectedIconPath":"pages/images/czy/wodeshouye.png"
+      },
+      {
+        "pagePath": "pages/destination/destination",
+        "text": "目的地",
+        "iconPath": "pages/images/czy/wode-mudidi.png",
+        "selectedIconPath": "pages/images/czy/wode-mudidi-s.png"
+      },
+      {
+      "pagePath": "pages/indexguanzhu/indexguanzhu",
+      "iconPath": "pages/images/czy/dibu-xiangji.png",
+      "selectedIconPath": "pages/images/czy/dibu-xiangji.png"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "商城",
+        "iconPath": "pages/images/czy/dibu-shangchang.png",
+        "selectedIconPath": "pages/images/czy/wode-shangcheng-s.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/images/czy/dibu-wode.png",
+        "selectedIconPath": "pages/images/czy/dibu-wode-s.png"
+      }
+    ],
+    "position":"bottom"
+  }
+}

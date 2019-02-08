@@ -1,0 +1,138 @@
+/* pages/youjipage/youjipage.wxss */
+.CB{clear: both}
+.PA{position: absolute}
+.PR{position: relative}
+.FL{float: left}
+.FR{float: right}
+
+.seachlan{
+  width: 100%;
+  height: 90rpx;
+}
+.seach{
+  width: 550rpx;
+  height: 70rpx;
+  color:#a1a1a1;
+  line-height: 75rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.jiao{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  width: 30rpx;
+  height: 40rpx;
+}
+.rentou{
+  font-weight: bold;
+  font-size: 40rpx;
+  color: black;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.face{
+  width: 100%;
+  height: 380rpx;
+  margin-top: 10rpx;
+}
+.face image{
+  width: 100%;
+  height: 100%;
+}
+.bt{
+  font-size: 34rpx;
+  height: 10r0rpx;
+  width: 90%;
+  margin:20rpx auto;
+}
+.tx1{
+  width: 95%;
+  margin:20rpx auto;
+}
+.zhanghao{
+  margin: auto;
+  width: 100%;
+  height: 115rpx;
+  background: white;
+}
+.zhanghao image{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top:20rpx;
+}
+.ffz-nc{
+  font-size: 26rpx;
+  left: 80rpx;
+  top: 20rpx;
+}
+.ffz-sj{
+  color: #a1a1a1;
+  font-size: 22rpx;
+  left: 80rpx;
+  top: 60rpx;
+}
+.gz{
+  width: 100rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  background: yellow;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+  margin-top: 40rpx;
+}
+.biaoqian{
+  width: 95%;
+  height: 140rpx;
+  background: #f6f6f6;
+  margin: auto;
+  border-radius: 10rpx;
+}
+.bindao{
+  font-size: 40rpx;
+  width: 90rpx;
+  height: 100rpx;
+  margin-top: 45rpx;
+  margin-left: 10rpx;
+}
+.biaoqianbox{
+  margin-top: 20rpx;
+  width: 500rpx;
+  height: 100rpx;
+}
+.hcs{
+  width: 50%;
+  height: 50%;
+}
+.huangshu{
+  color: #ffde00;
+  font-size: 32rpx;
+  margin-left: 15rpx;
+}
+.cfsj{
+  font-size: 22rpx;
+  color: #8d8d8d;
+}
+.shuzi{
+  font-size: 22rpx;
+  color: #434343;
+  margin-left: 3rpx;
+}
+
+.wenzi1{
+  margin-top: 20rpx;
+  width: 100%;
+  background: white;
+  font-size: 30rpx;
+  color: #282828;
+}
+.tuce3{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 350rpx;
+}
+.shipin1{
+  width: 100%;
+  height: 350rpx;
+}

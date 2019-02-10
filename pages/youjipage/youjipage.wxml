@@ -1,17 +1,18 @@
 <!--pages/youjipage/youjipage.wxml-->
 <view class='seachlan'>
-  <image class='jiao FL' src='../images/czy/gonglue-jiao.png'></image>  
+  <!-- <image class='jiao FL' src='../images/czy/gonglue-jiao.png' bindtap="Cancel"></image>   -->
   <view class='seach FL'>
    游记
   </view>
-  <text class='rentou FL'>· · ·</text>
+  <!-- <text class='rentou FL'>· · ·</text> -->
+  <image class='jiao FL' src='../images/czy/jiaotong-wddd.png' bindtap="AddTourist"></image>  
 </view>
 <image class='face' src='{{czy.yjpface}}'></image>
 <view class='bt'>{{czy.yjpbt}}</view>
 
 <view class='tx1'>
     <view class='zhanghao PR'>
-      <image class='ffz' src='{{czy.yjphead}}'></image>
+      <image class='ffz' src='{{czy.yjphead}}' bindtap="OwnInfoTouristList"></image>
       <text class='ffz-nc PA'>{{czy.yjpname}}</text>
       <text class='ffz-sj PA'>{{czy.yjpsj}}</text>
       <view class='gz FR'>+关注</view>

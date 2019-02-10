@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "商城",
-  "usingComponents": {}
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar"
+  }
   
 }

@@ -1,11 +1,13 @@
   // pages/indexguanzhu/indexguanzhu.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      tabbar: {},
+      showModalStatus: false
   },
 
   /**
@@ -13,7 +15,10 @@ Page({
    */
   onLoad: function () {
     //跳转传参
+    app.editTabbar();
+    // template.tabbar("tabBar", 0, this)
     var _this = this
+    console.log(_this.route)
     wx.request({
       url: 'http://localhost:3000/getdataczy',
       success(res) {
@@ -39,7 +44,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.hideTabBar();
   },
 
   /**
@@ -75,8 +80,31 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  Search: function (){
+    wx.navigateTo({
+      url: "/pages/search/search",
+    })
+  },
+  PicShow: function (e){
+    console.log(e)
+  },
+  follow:function(e){
+    switch(e.currentTarget.dataset.name){
+      case "关注":
+        // dig a  user tag &request backend  get content
+        wx.switchTab({
+          url: "/pages/indexguanzhu/indexguanzhu",
+        })
+      break;
+      case "推荐":
+        wx.navigateTo({
+          url: "/pages/indextuijian/indextuijian",
+        })
+      break;
+      default:
+      break;
+    }
+
   }
-
-
-
 })

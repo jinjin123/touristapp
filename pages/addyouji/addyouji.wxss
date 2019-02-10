@@ -1,19 +1,8 @@
-/* pages/addyouji/addyouji.wxss */
-.CB{clear: both}
-.PA{position: absolute}
+page {
+  background: #f6f7f8;
+}
 .PR{position: relative}
-.FL{float: left}
-.FR{float: right}
-
-.tou{
-  width: 100%;
-  height: 100rpx;
-}
-.tou image{
-  margin: 25rpx;
-  width: 40rpx;
-  height: 40rpx;
-}
+.PA{position: absolute}
 .ccg{
   width: 100rpx;
   height: 40rpx;
@@ -21,6 +10,17 @@
   top: 25rpx;
   left: 510rpx;
   text-align: center;
+}
+
+.tou{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+}
+.tou image{
+  margin: 25rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
 .fb{
   font-size: 30rpx;
@@ -31,74 +31,64 @@
   left: 620rpx;
   text-align: center;
 }
-.tjfm{
-  width: 100%;
-  height: 215rpx;
-  background: #f5f5f5;
+.question-form {
+  margin: 25rpx;
 }
-.uplodbox{
-  width: 50rpx;
-  height: 50rpx;
-  left: 280rpx;
-  top: 80rpx;
+
+.question-input-area {
+  background-color: #fff;
+  border: 1rpx solid #f2f2f2;
+  border-radius: 4rpx;
 }
-.uplodjia{
-  width: 48rpx;
-  height: 48rpx;
-  left: 282rpx;
-  top: 82rpx;
+
+.question-title-wrap {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  margin: 10rpx 30rpx;
+  padding: 20rpx 0;
 }
-.uplodfm{
-  color: #cfcfcf;
-  font-size: 26rpx;
-  left: 340rpx;
-  top: 90rpx;
+
+.question-title {
+  flex: 1;
 }
-.uploabt{
-  width: 90%;
-  height: 110rpx;
-  margin: auto;
-  border-bottom: #cfcfcf 1rpx solid;
-  font-size: 34rpx;
+
+.weui-textarea-counter, .title-input-counter {
+  color: #b3b3b3;
+  font-size: 14px;
+  padding-left: 10rpx;
 }
-.uploabt image{
-  width: 30rpx;
-  height: 30rpx;
-  margin-left: 10rpx;
+
+.weui-cell::before, .weui-cells::before, .weui-cell::after, .weui-cells::after {
+  border: none;
+}
+
+.question-images-area {
+  padding: 40rpx 0;
+}
+
+.question-images-tool {
+  display: flex;
+  align-items: center;
+}
+
+.question-images {
+  display: flex;
+  align-items: center;
   margin-top: 40rpx;
 }
-.uploabt input{
-  margin-left: 10rpx;
-  margin-top: 30rpx;
-  color: black;
+
+.q-image-wrap {
+  width: 31%;
+  margin-right: 10rpx;
 }
-.srzw{
-  width: 90%;
-  height: 680rpx;
-  color: #cfcfcf;
-  font-size: 26rpx;
-  margin: auto
-}
-.srzw textarea{
-  color: black;
-  margin-top: 5%;
+
+.q-image {
+  flex: 1;
+  height: 200rpx;
   width: 100%;
-  height: 95%;
 }
-.dibu{
-  width: 100%;
-  height: 95rpx;
-  margin: auto;
-  box-shadow: 0rpx 0rpx 0rpx 10rpx rgb(190, 188, 158);
-  font-size: 24rpx;
-}
-.dibu image{
-  width: 40rpx;
-  height: 40rpx;
-  margin-left: 10rpx;
-  margin-top: 30rpx;
-}
-.dibu text{
-  margin-left: 10rpx;
-  margin-top: 30rpx;
+
+.q-image-remover {
+  text-align: center;
 }

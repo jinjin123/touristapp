@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "目的地",
-  "usingComponents": {}
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar"
+  }
 }

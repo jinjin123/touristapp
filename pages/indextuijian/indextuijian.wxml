@@ -13,7 +13,7 @@
       </view>  
   </view>
   <view class='liebiao CB'>
-      <view class='lbdanxiang FL' wx:for="{{czy.syliebiao}}"  wx:for-index="index" >{{item.lbdanxiang}}</view>
+      <view class='lbdanxiang FL' wx:for="{{czy.syliebiao}}"  wx:for-index="index" bindtap="follow"data-name="{{item.lbdanxiang}}">{{item.lbdanxiang}}</view>
   </view>
   <view class='tx2'>
       <view class='bt'>{{czy.sytjbt}}</view>

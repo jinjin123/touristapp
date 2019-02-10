@@ -1,16 +1,24 @@
 <!--pages/search/search.wxml-->
 <view class='container'>
 <view class='seachlan'>
-  <image class='jiao FL' src='../images/czy/gonglue-jiao.png'></image>  
+  <!-- <image class='jiao FL' src='../images/czy/gonglue-jiao.png'></image>   -->
   <view class='seach FL'>
     <image class='FL' src='../images/czy/gonglue-seach.png'></image>
-    <input class='FL' placeholder="搜索跳转页面" bindconfirm='searchBtn' focus='ture'/>
+    <input class='FL' placeholder="搜索跳转页面" bindinput='WatchInput' focus='ture'/>
   </view>
+    <button bindtap="SearchClick" >搜索</button>
 </view>
 
 <view class='ssls'>搜索历史</view>
-<view class='kuang'></view>
+<view class='wx:if="{{searchLogShowed}}"'>
+    <view  class="search-log" wx:for-item="searchLog" wx:for="{{searchLogList}}"  wx:key="searchLogListId" bindtap="searchDataByLog" data-log="{{searchLog}}">
+                        {{searchLog}} 
+    </view>
+</view>
 <view class='ssls'>热门搜索</view>
-<view class='kuang'></view>
-<view></view>
+<view class='wx:if="{{searchLogShowed}}"'>
+    <view  class="search-log" wx:for-item="searchLog" wx:for="{{searchLogList}}"  wx:key="searchLogListId" bindtap="searchDataByLog" data-log="{{searchLog}}">
+                        {{searchLog}} 
+    </view>
+</view>
 </view>

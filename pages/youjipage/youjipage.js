@@ -19,5 +19,19 @@ Page({
       }
     })
   },
-
+  Cancel: function(){
+    wx.switchTab({
+      url: "/pages/me/me",
+    })
+  },
+  OwnInfoTouristList : function (){
+    wx.navigateTo({
+      url: "/pages/youjilist/youjilist",
+    })
+  },
+  AddTourist: function (){
+    wx.navigateTo({
+      url: "/pages/addyouji/addyouji",
+    })
+  }
 })

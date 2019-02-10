@@ -22,8 +22,9 @@
 
 <view class='normalBar ' wx:for="{{normalBar}}" wx:key="{{index}}">
           <image src="{{item.img}}"/>
-          <text class='usertitle'>{{item.usertitle}}</text>
+          <!-- usually get the  basic auth from first page so not use open-type='getUserInfo'-->
+          <button class='usertitle' bindtap="OwnInfo" data-name='{{item.usertitle}}'>{{item.usertitle}}</button>
           <text class='fuhao'>></text>
   </view>
-
+  <tabbar tabbar="{{tabbar}}"></tabbar>
 </view>

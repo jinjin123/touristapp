@@ -1,10 +1,13 @@
 // pages/me/me.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    tabbar:{},
+    title:'',
     userImg: '../images/czy/wd-touxiang.png',
     userName: '暴躁君',
     userlevel: 'lv.2',
@@ -57,7 +60,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    app.editTabbar();
   },
 
   /**
@@ -71,7 +74,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.hideTabBar();
   },
 
   /**
@@ -107,5 +110,20 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  OwnInfo: function (e){
+    switch(e.currentTarget.dataset.name){
+      case "我的游记":
+        // dig a  user tag &request backend  get content
+        wx.navigateTo({
+          url: "/pages/youjipage/youjipage",
+        })
+      break;
+      case "我的点评":
+          console.log('other');
+      break;
+      default:
+      break;
+    }
   }
 })

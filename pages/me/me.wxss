@@ -90,7 +90,7 @@
   background: white;
   display: flex;
   align-items: center;
-  padding: 10rpx;
+  padding: 9rpx;
   top: 160rpx;
   position: relative;
   font-size: 28rpx;
@@ -103,6 +103,13 @@
 }
 .normalBar .usertitle{
   margin-left: 25rpx;
+  outline: none;
+  width:100%;
+  background-color:white;
+
+}
+button::after {
+  border:none
 }
 .normalBar .fuhao{
   font-size: 40rpx;

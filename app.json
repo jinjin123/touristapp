@@ -1,18 +1,18 @@
-﻿{
+{
   "pages": [
-    "pages/dlzhuce/dlzhuce",
-    "pages/login/login",
+    "pages/addyouji/addyouji",
     "pages/indexguanzhu/indexguanzhu",
     "pages/indextuijian/indextuijian",
+    "pages/login/login",
+    "pages/dlzhuce/dlzhuce",
     "pages/tianjia/tianjia",
     "pages/gongluefl/gonglluefl",
-    "pages/addyouji/addyouji",
     "pages/youjipage/youjipage",
     "pages/youjilist/youjilist",
     "pages/store/store",
     "pages/destination/destination",
-    "pages/me/me",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/me/me"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,19 +28,14 @@
       {
         "pagePath": "pages/indexguanzhu/indexguanzhu",
         "text": "首页",
-        "iconPath": "pages/images/czy/wodeshouyen.png",
-        "selectedIconPath":"pages/images/czy/wodeshouye.png"
+        "iconPath": "pages/images/czy/wode-shouyen.png",
+        "selectedIconPath":"pages/images/czy/wode-shouye.png"
       },
       {
         "pagePath": "pages/destination/destination",
         "text": "目的地",
         "iconPath": "pages/images/czy/wode-mudidi.png",
         "selectedIconPath": "pages/images/czy/wode-mudidi-s.png"
-      },
-      {
-      "pagePath": "pages/indexguanzhu/indexguanzhu",
-      "iconPath": "pages/images/czy/dibu-xiangji.png",
-      "selectedIconPath": "pages/images/czy/dibu-xiangji.png"
       },
       {
         "pagePath": "pages/store/store",

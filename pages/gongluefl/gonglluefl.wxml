@@ -1,0 +1,92 @@
+<!--pages/gongluefl/gonglluefl.wxml-->
+<view class='seachlan'>
+  <image class='jiao FL' src='../images/czy/gonglue-jiao.png'></image>  
+  <view class='seach FL'>
+    <image class='FL' src='../images/czy/gonglue-seach.png'></image>
+    <input class='FL' placeholder="搜一搜攻略"></input>
+  </view>
+  <image class='rentou FL' src='../images/czy/gonglue-rentou.png'></image>
+</view>
+<view class='glfl PR'>
+  <image class='FL hongbt' src='../images/czy/gongluefenlei.png'></image>
+  <view class='wenzi1 PA'>攻略分类</view>
+
+  <view class='FL baibt' style="background: url('../images/czy/gonglu-gl1.png');background-size: cover">国内</view>
+
+</view>
+
+<view class='cnxh'>
+  <view class='bt FL'>
+    <text class='huangshu'>|</text>
+    <text class='btwenzi'>猜你喜欢</text>
+  </view>
+  <view class='tuce1 FL'>
+    <view class='bigpic FL' style="background: url('{{czy.gldjdcyd}}');background-size: cover;">日本西野七濑老家</view>
+
+    <view class='smallbox FL'>
+      <image src='{{czy.glxjp}}'></image>
+      <text class='smalltext'>{{czy.glxjpwenzi}}</text>
+    </view>
+  </view>
+</view>
+<view class='cnxh'>
+  <view class='bt FL'>
+    <text class='huangshu'>|</text>
+    <text class='btwenzi'>当季推荐</text>
+    <text class='FR ckgd'>查看更多></text>
+  </view>
+  <view class='tuce1 FL'>
+    <view class='city PR' wx:for="{{czy.mdddangjituijian}}"  wx:for-index="index">
+      <image class='meijpic FL' src='{{item.hrbpic}}'></image>
+      <image class='ditupic PA' src='{{item.xiushipic}}'></image>
+      <text class='chinese PA'>{{item.hrbbt}}</text>
+      <text class='english PA'>{{item.whitee}}</text>
+      <text class='chengshi FL'>{{item.hrbbt}}</text>
+      <text class='jiangzhu FL'>{{item.bincheng}}</text>
+    </view>
+    
+  </view>
+</view>
+
+
+<view class='cnxh'>
+  <view class='bt FL'>
+    <text class='huangshu'>|</text>
+    <text class='btwenzi'>热门目的地</text>
+    <text class='FR ckgd'>查看更多></text>
+  </view>
+  <view class='tuce1 FL' >
+    <view class='city2 PR' style="background: url('{{item.city2}}');background-size: cover;" wx:for="{{czy.mdd}}" wx:for-index="index">
+      <text class='top PA'>{{item.top}}</text>
+      <text class='num PA'>{{item.num}}</text>
+      <view class='huidi PA'>
+        <text class='sanya FL'>{{item.sanya}}</text>
+        <text class='ygst FL'>{{item.ygst}}</text>
+      </view>
+    </view>  
+    <view class='city3 PR' style="background: url('{{item.city3}}');background-size: cover;" wx:for="{{czy.mddtax}}" wx:for-index="index">
+        <text class='num2 PA'>{{item.num2}}</text>
+        <view  class='chengdu'>{{item.chengdu}}</view >
+        <view  class='mshms '>{{item.msh}}</view >
+    </view>
+  
+  </view>
+
+</view>
+
+<view class='cnxh'>
+  <view class='bt FL'>
+    <text class='huangshu'>|</text>
+    <text class='btwenzi'>主题玩法</text>
+  </view>
+  <view class='tuce1' >
+      <view class='csbiao' wx:for="{{czy.mddcsml}}" wx:for-index="index">{{item.csml}}</view>
+      
+  </view>
+  <view class='tuce1'>
+    <view class='city4' wx:for="{{czy.mddcs}}" wx:for-index="index">
+      <image src='{{item.cspic}}'></image>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>

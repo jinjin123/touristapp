@@ -16,11 +16,11 @@
   line-height: 75rpx;
   text-align: center;
   margin-top: 30rpx;
-  margin-left: 30rpx;
+  margin-left: 70rpx;
 }
 .jiao{
   margin-top: 40rpx;
-  margin-left: 30rpx;
+  margin-left: 70rpx;
   width: 30rpx;
   height: 40rpx;
 }

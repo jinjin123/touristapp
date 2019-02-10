@@ -2,7 +2,7 @@
   <view class='shangtiao CB'>
       <view class='seach FL'>
         <image class='FL' src='{{czy.sybj}}'></image>
-        <input class='FL' placeholder="春节旅游最佳去处"></input>
+        <input class='FL' placeholder="春节旅游最佳去处" bindtap="Search"></input>
       </view>
       <image class='tixing FL' src='{{czy.sytixing}}'></image>
   </view>
@@ -12,8 +12,10 @@
         <view class='text'>{{item.sygonglue}}</view>
       </view>  
   </view>
-  <view class='liebiao CB'>
-      <view class='lbdanxiang FL' wx:for="{{czy.syliebiao}}"  wx:for-index="index" >{{item.lbdanxiang}}</view>
+  <view class='liebiao CB'  >
+         <!-- <view class='lbdanxiang FL'  wx:if="{{item.lbdanxiang=='关注'}}" bindtap="follow" >{{item.lbdanxiang}}</view> -->
+         <!-- <view class='lbdanxiang FL'  wx:elif="{{item.lbdanxiang=='攻略'}}" bindtap="follow" >{{item.lbdanxiang}}</view> -->
+         <view class='lbdanxiang FL' wx:for="{{czy.syliebiao}}"  wx:for-index="index" bindtap="follow" data-name="{{item.lbdanxiang}}">{{item.lbdanxiang}} </view>
   </view>
   <view class='tx1'>
     <view class='zhanghao PR'>
@@ -103,4 +105,6 @@
       </view>
       <view class='gdhf'>{{czy.sygzgengduohuifu}}</view>
 </view>
+  <tabbar tabbar="{{tabbar}}"></tabbar>
 </view>
+

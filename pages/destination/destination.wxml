@@ -22,7 +22,15 @@
 
 <view class='types'>
       <block wx:for="{{czy.mddtypes}}"  wx:for-index="index">
-        <view class='typeItem'>
+        <view class='typeItem' wx:if="{{item.title =='游记'}}">
+          <image src="{{item.imgUrl}}" bindtap="tourist_node" />
+          <text>{{item.title}}</text>
+        </view>
+        <view class='typeItem' wx:elif="{{item.title =='攻略'}}">
+          <image src="{{item.imgUrl}}" bindtap="player" />
+          <text>{{item.title}}</text>
+        </view>
+        <view class='typeItem' wx:else>
           <image src="{{item.imgUrl}}"/>
           <text>{{item.title}}</text>
         </view>
@@ -53,13 +61,13 @@
             <image src='{{item.img}}'/>
           </view>
           <view class='introbox'>
-          <image class='touxiang' src='{{item.img1}}'></image>
-          <text class='user'>{{item.user}}</text>
-          <view class='title ellipsis'>{{item.title}}</view>
+          <image class='touxiang' src='../images/czy/mdd-tx1.png'></image>
+          <text class='user'>张cheche</text>
+          <view class='title ellipsis'>海南三亚5天4晚自由行 希尔顿泳池房连住 蜈支洲酒店泳池别墅自驾</view>
           <view class='info'>
-            <text class='time'>{{item.time}}</text>
-            <image class='heart' src='{{item.img2}}'></image>
-            <text class='num'>{{item.peopleNum}}</text>
+            <text class='time'>2018.10.08</text>
+            <image class='heart' src='../images/czy/mdd-tx2.png'></image>
+            <text class='num'>54</text>
             </view>
           </view>
         </view>
@@ -68,7 +76,7 @@
 <view class='bottomTips'>
     想和朋友们分享这个目的地吗？立即分享
   </view>
-
+  <tabbar tabbar="{{tabbar}}"></tabbar>
   </view>
 
   

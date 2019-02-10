@@ -21,7 +21,9 @@ Page({
   },
   bindchange(e) {
     this.setData({
-      swiperIndex: e.detail.current
+      swiperIndex: e.detail.current,
+      imageHeight: wx.getSystemInfoSync().windowHeight,
+      imageWidth: wx.getSystemInfoSync().windowWidth,
     })
   },
   /**

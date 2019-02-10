@@ -10,15 +10,15 @@
   height: 90rpx;
 }
 .seach{
-  width: 650rpx;
+  width: 550rpx;
   height: 70rpx;
   color:#a1a1a1;
   line-height: 75rpx;
-  text-align: center;
+  /* text-align: center; */
   border-radius: 30rpx;
   background: #f8f8f8;
   margin-top: 30rpx;
-  margin-left: 30rpx;
+  /* margin-left: 30rpx; */
 }
 .seach image{
   width: 40rpx;
@@ -44,4 +44,46 @@
 }
 .kuang{
   width: 90%;
+}
+.weui-search-bar {
+  position:relative;
+  padding:6px 10px;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  box-sizing:border-box;
+  background-color:#EFEFF4;
+  border-top:0 solid #D7D6DC;
+  border-bottom:0 solid #D7D6DC;
+  border-radius:4px;
+}
+button {
+  height:33px;
+  /* color:#a1a1a1; */
+  text-align:center;
+  font-size:15px;
+  background-color: white;
+  width:60px;
+  top:15px;
+}
+button::after {
+  border:none
+}
+
+.search-log{
+  border:1px solid #eee !important;
+  display:inline-block !important;
+  margin-left:10px !important;
+  margin-top:5px !important;
+  border-radius:5px;
+  padding-left:14px;
+  padding-right:14px;
+  box-sizing:border-box;
+  text-align:center;
+  text-decoration:none;
+  line-height:2.55555556;
+}
+
+.clear-search-log{
+  text-align: center;
 }

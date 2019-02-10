@@ -3,28 +3,80 @@ var inputContent = {};
 Page({
   
   data: {
-    inputContent: {}
+    msgList:[], 
+    searchLogList:[], 
+    hidden:true, 
+    scrollTop : 0, 
+    inputShowed: false, 
+    inputVal: "", 
+    searchLogShowed: false,
+    inputContent: {},
+    searchContent:""
   },
-
-  bindinput: function (e) {
-    inputContent[e.currentTarget.id] = e.detail.value
+  onLoad:function (){
+      var that = this;
+      // get from wx strongesync cache
+      that.setData({
+        searchLogShowed: true, 
+        inputShowed: true,
+        msgList:["首页","目的地","商城","我的"],
+        searchLogList: ["首页","目的地","商城","我的"]
+      })
+  },
+  WatchInput: function (e) {
+    this.searchContent  = e.detail.value 
   },
 
   SearchClick: function () {
-    var inputValue = inputContent.search_input;
-    if (inputValue) {
-      console.log('inputValue=', inputValue)
-      wx.navigateTo({
-        url: "pages/dianni1/dianni1",
-      })
-    } else {
-      console.log('inputValue=', inputValue)
-      wx.showModal({
-        title: '提示',
-        content: '请输入关键字进行搜索',
-        showCancel: false
-      })
+    switch(this.searchContent){
+      case "首页":
+        wx.switchTab({
+          url: "/pages/indexguanzhu/indexguanzhu",
+        })
+      break;
+      case "目的地":
+        wx.switchTab({
+          url: "/pages/destination/destination",
+        })
+      break;
+      case "商城":
+        wx.switchTab({
+          url: "/pages/store/store",
+        })
+      break;
+      case "我的":
+        wx.switchTab({
+          url: "/pages/me/me",
+        })
+      break;
+      default:
+        console.log('no jump') 
     }
-
   },
+  searchDataByLog: function(e){
+    switch(e.target.dataset.log){
+      case "首页":
+        wx.switchTab({
+          url: "/pages/indexguanzhu/indexguanzhu",
+        })
+      break;
+      case "目的地":
+        wx.switchTab({
+          url: "/pages/destination/destination",
+        })
+      break;
+      case "商城":
+        wx.switchTab({
+          url: "/pages/store/store",
+        })
+      break;
+      case "我的":
+        wx.switchTab({
+          url: "/pages/me/me",
+        })
+      break;
+      default:
+        console.log('no jump')
+    }
+  }
 })

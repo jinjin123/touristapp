@@ -2,12 +2,14 @@
 <view class='container'>
 
   <view class='header'>
-  <image class='headertu' src='/images/icon/time.png'></image>
+  <image class='headertu' src=''></image>
+  <!-- <image class='headertu' src='/images/icon/time.png'></image> -->
     <navigator url="../search/search" open-type="navigate" class='searchBar'>
         <icon type="search" size='16'/>
         <text>日本拒签全退</text>
     </navigator>
-     <image class='headertu1' src='/images/icon/xinxi.png'></image>
+     <!-- <image class='headertu1' src='/images/icon/xinxi.png'></image> -->
+     <image class='headertu1' src=''></image>
   </view>
    <view class='container content'>
     <swiper class='bannerSwiper' indicator-dots="{{true}}" indicator-color="rgba(255,255,255,0.3)" indicator-active-color="#5d5d5d"
@@ -107,5 +109,5 @@
 <view class='bottomTips'>
     想和朋友们分享这个优惠吗？立即分享
   </view>
-
+  <tabbar tabbar="{{tabbar}}"></tabbar>
    </view>

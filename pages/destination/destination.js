@@ -1,11 +1,12 @@
 // pages/destination/destination.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   
+    tabbar:{}
   },
 
   /**
@@ -13,6 +14,7 @@ Page({
    */
   onLoad: function () {
     //跳转传参
+    app.editTabbar();
     var _this = this
     wx.request({
       url: 'http://localhost:3000/getdataczy',
@@ -34,7 +36,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.hideTabBar();
   },
 
   /**
@@ -70,5 +72,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  tourist_node: function(){
+    wx.navigateTo({
+      url: "/pages/youjilist/youjilist",
+    })
+  },
+  player: function (){
+    wx.navigateTo({
+      url: "/pages/gongluefl/gonglluefl",
+    })
   }
 })

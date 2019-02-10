@@ -1,6 +1,6 @@
 <!--pages/youjilist/youjilist.wxml-->
 <view class='seachlan'>
-  <image class='jiao FL' src='../images/czy/gonglue-jiao.png'></image>  
+  <!-- <image class='jiao FL' src='../images/czy/gonglue-jiao.png'></image>   -->
   <view class='seach FL'>
     <image class='FL' src='../images/czy/gonglue-seach.png'></image>
     <input class='FL' placeholder="搜索游记"></input>
@@ -10,7 +10,7 @@
 
 <!-- 轮播 -->
 
-  <swiper class='swiperClass' autoplay indicator-color="#a39f99" indicator-active-color="#f49641" indicator-dots  interval="2000" duration="1000" previous-margin="30px" next-margin="30px" circular bindchange="bindchange" style='height: {{swiperHeight}}px'>
+  <swiper class='swiperClass' autoplay indicator-color="#a39f99" indicator-active-color="#f49641" indicator-dots  interval="2000" duration="1000" previous-margin="30px" next-margin="30px" circular bindchange="bindchange" style='height: {{imageHeight}}px,width:{{imageWidth}}px'>
     <block wx:for="{{imgUrls}}" wx:key="{{index}}">
       <swiper-item>
         <image src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : 'quiet'}}" mode='aspectFill'>

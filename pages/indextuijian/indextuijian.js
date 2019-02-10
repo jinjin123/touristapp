@@ -69,7 +69,24 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function (e) {
 
+  },
+  follow: function(e){
+    switch(e.currentTarget.dataset.name){
+      case "关注":
+        // dig a  user tag &request backend  get content
+        wx.switchTab({
+          url: "/pages/indexguanzhu/indexguanzhu",
+        })
+      break;
+      case "推荐":
+        wx.navigateTo({
+          url: "/pages/indextuijian/indextuijian",
+        })
+      break;
+      default:
+      break;
+    }
   }
 })

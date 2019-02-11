@@ -17,6 +17,7 @@ Page({
     //   '../images/czy/yj-jxyj1.png',
     //   '../images/czy/yj-jxyj1.png'
     // ],
+    images:[],
     swiperIndex: 0 //这里不写第一次启动展示的时候会有问题
   },
   bindchange(e) {
@@ -89,5 +90,13 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  longTap: function(e) {
+    console.log(e)
+    wx.showModal({
+      title: '提示',
+      content: '长按事件被触发',
+      showCancel: false
+    })
+  },
 })

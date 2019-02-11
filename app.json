@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/youjilist/youjilist",
     "pages/indexguanzhu/indexguanzhu",
     "pages/youjipage/youjipage",
-    "pages/youjilist/youjilist",
     "pages/destination/destination",
     "pages/gongluefl/gonglluefl",
     "pages/store/store",

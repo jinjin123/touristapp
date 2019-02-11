@@ -24,7 +24,7 @@
 
 <view class='alltravels'>
   <view class='bt'>全部游记</view>
-  <view class='youjibox'>
+  <!-- <view class='youjibox'>
   <view class='zb FL'>
     <view class='yjbt '>4000公里在路上，去追逐新疆的草
 原与雪山｜伊犁小伊犁小环线</view>
@@ -47,34 +47,34 @@
       </view>
     </view>
   </view>
-    <view class='yjpic FL'>
+    <view class='yjpic FL' bindtap="longTap">
       <image src='{{czy.yjlhead}}'></image>
     </view>
-  </view>
+  </view> -->
 
-<view class='youjibox'>
-  <view class='zb FL'>
-    <view class='yjbt '>{{czy.yjlbt}}</view>
-    <view class='yjnr '>{{czy.yjlwz}}</view>
+<view class='youjibox' wx:for='{{czy.mddtrip}}'>
+  <view class='zb FL' >
+    <view class='yjbt '>{{item.yjlbt}}</view>
+    <view class='yjnr '>{{item.yjlwz}}</view>
     <view class='yjbq '>
       <view class='dibul FL'>
-        <image class=' tx' src='{{czy.yjlhead}}'></image>
-        <text class='nicheng PA'>{{czy.yjpname}}</text>
+        <image class=' tx' src='{{item.yjlhead}}'></image>
+        <text class='nicheng PA'>{{item.yjpname}}</text>
       </view>
       <view class='dibur FR'>
           <view class='eyebox FL'>
-            <image src='{{czy.yjpeye}}'></image>
-            {{czy.yjpeyen}}
+            <image src='{{item.yjpeye}}'></image>
+            {{item.yjpeyen}}
           </view>
           <view class='eyebox FL'>
-            <image src='{{czy.yjpemail}}'></image>
-            {{czy.yjpemailn}}
+            <image src='{{item.yjpemail}}'></image>
+            {{item.yjpemailn}}
           </view>
       </view>
     </view>
   </view>
-    <view class='yjpic FL'>
-      <image src='{{czy.yjpface}}'></image>
+    <view class='yjpic FL' bindtap="longTap">
+      <image src='{{item.img}}' data-name="{{item.filename}}" ></image>
     </view>
   </view>
 

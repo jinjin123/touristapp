@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/dlzhuce/dlzhuce",
     "pages/youjilist/youjilist",
     "pages/indexguanzhu/indexguanzhu",
     "pages/youjipage/youjipage",
     "pages/destination/destination",
     "pages/gongluefl/gonglluefl",
     "pages/store/store",
-    "pages/dlzhuce/dlzhuce",
     "pages/login/login",
     "pages/me/me",
     "pages/indextuijian/indextuijian",

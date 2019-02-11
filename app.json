@@ -1,18 +1,18 @@
 {
   "pages": [
-    "pages/addyouji/addyouji",
     "pages/indexguanzhu/indexguanzhu",
-    "pages/indextuijian/indextuijian",
-    "pages/login/login",
-    "pages/dlzhuce/dlzhuce",
-    "pages/tianjia/tianjia",
-    "pages/gongluefl/gonglluefl",
     "pages/youjipage/youjipage",
     "pages/youjilist/youjilist",
-    "pages/store/store",
     "pages/destination/destination",
-    "pages/search/search",
-    "pages/me/me"
+    "pages/gongluefl/gonglluefl",
+    "pages/store/store",
+    "pages/dlzhuce/dlzhuce",
+    "pages/login/login",
+    "pages/me/me",
+    "pages/indextuijian/indextuijian",
+    "pages/addyouji/addyouji",
+    "pages/tianjia/tianjia",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

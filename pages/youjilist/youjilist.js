@@ -92,11 +92,33 @@ Page({
 
   },
   longTap: function(e) {
-    console.log(e)
     wx.showModal({
       title: '提示',
-      content: '长按事件被触发',
-      showCancel: false
+      content: '要删除该图片吗',
+      showCancel: true,
+      success: function (res) {
+        console.log(res)
+        if (res.cancel) {
+        } else {
+          wx.request({
+            url: 'http://localhost:4000/des/node/del',
+            method:'POST',
+            data: {"title":e.target.dataset.name },
+            header:{
+              'content-type':'application/x-www-form-urlencoded'
+            },
+            success:function(res){
+              if (res.data.code == 0){
+                wx.navigateTo({
+                  url: "/pages/youjilist/youjilist",
+                })
+              }else{
+                  console.log('del faild')
+              }
+            }
+          })
+        }
+     },
     })
   },
 })

@@ -74,7 +74,7 @@
     </view>
   </view>
     <view class='yjpic FL' bindtap="longTap">
-      <image src='{{item.img}}' data-name="{{item.filename}}" ></image>
+      <image src='{{item.img}}' data-name="{{item.title}}" ></image>
     </view>
   </view>
 

@@ -14,9 +14,9 @@
    <view class='container content'>
     <swiper class='bannerSwiper' indicator-dots="{{true}}" indicator-color="rgba(255,255,255,0.3)" indicator-active-color="#5d5d5d"
       autoplay="{{true}}" interval="6000" duration="500" circular="{{true}}" >
-      <block wx:for="{{bannerUrls}}" wx:key="{{index}}">
+      <block wx:for="{{czy.bannerUrls}}" wx:key="{{index}}">
         <swiper-item>
-          <image src="{{item}}" class="slide-image"/>
+          <image src="{{item.img}}" class="slide-image"/>
         </swiper-item>
       </block>
     </swiper>
@@ -38,7 +38,7 @@
       <text class='biaoti2'>查看更多 ></text>
       </view>
       <view class='contentWrapper'>
-        <view class='likeItem' wx:for="{{sale}}" wx:key="{{index}}">
+        <view class='likeItem' wx:for="{{czy.sale}}" wx:key="{{index}}">
           <view class='imgBox'>
             <image src='{{item.img}}'/>
             <view class='type'>{{item.type}}</view>
@@ -60,7 +60,7 @@
 
  <view class='feedList'>
     <view class='content topic'>
-    <view class='discountItem' wx:for="{{discount}}" wx:key="{{index}}">
+    <view class='discountItem' wx:for="{{czy.discount}}" wx:key="{{index}}">
       <image src='{{item.img1}}'></image>
       <view class='topictitle'>
         <text class='topictext'>{{item.text}}</text>
@@ -78,7 +78,7 @@
       <text class='biaoti2'>查看更多 ></text>
       </view>
 <view class='stations'>
-          <view class='stationItem' wx:for="{{station}}" wx:key="{{index}}">
+          <view class='stationItem' wx:for="{{czy.station}}" wx:key="{{index}}">
             <view class='stationImg'>
               <image src="{{item.img}}"/>
               <view>{{item.name}}</view>
@@ -94,7 +94,7 @@
       <text class='biaoti2'>查看更多 ></text>
       </view>
       <view class='contentWrapper'>
-        <view class='likeItem' wx:for="{{love}}" wx:key="{{index}}">
+        <view class='likeItem' wx:for="{{czy.love}}" wx:key="{{index}}">
           <view class='imgBox'>
             <image src='{{item.img}}'/>
           </view>

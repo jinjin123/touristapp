@@ -15,10 +15,11 @@ Page({
       //跳转传参
       var _this = this
       wx.request({
-        url: 'http://localhost:3000/getdataczy',
+        // url: 'http://localhost:3000/getdataczy',
+        url: 'http://localhost:4000/api/index/rem',
         success(res) {
           console.log(res.data)
-          _this.setData({ czy: res.data })
+          _this.setData({ czy: res.data.data })
         }
       })
    
@@ -88,5 +89,10 @@ Page({
       default:
       break;
     }
-  }
+  },
+  Search: function (){
+    wx.navigateTo({
+      url: "/pages/search/search",
+    })
+  },
 })

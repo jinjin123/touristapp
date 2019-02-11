@@ -2,7 +2,7 @@
   <view class='shangtiao CB'>
       <view class='seach FL'>
         <image class='FL' src='{{czy.sybj}}'></image>
-        <input class='FL' placeholder="春节旅游最佳去处"></input>
+        <input class='FL' placeholder="春节旅游最佳去处" bindtap="Search"></input>
       </view>
       <image class='tixing FL' src='{{czy.sytixing}}'></image>
   </view>

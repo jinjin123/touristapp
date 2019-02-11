@@ -25,7 +25,7 @@
   <view class="question-images-area">
 
     <view class="question-images-tool">
-      <input placeholder="添加标签"></input>
+      <input placeholder="添加标签" bindinput="handleTag"></input>
       <button type="default" size="mini" bindtap="ChooseImg" wx:if="{{images.length < 3}}">添加图片</button>
     </view>
 

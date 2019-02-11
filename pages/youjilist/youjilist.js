@@ -5,18 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../images/czy/shangcheng-lb1.png',
-      '../images/czy/shangcheng-lb1.png',
-      '../images/czy/shangcheng-lb1.png',
-      '../images/czy/shangcheng-lb1.png'
-    ],
-    imgUrls1: [
-      '../images/czy/yj-jxyj1.png',
-      '../images/czy/yj-jxyj1.png',
-      '../images/czy/yj-jxyj1.png',
-      '../images/czy/yj-jxyj1.png'
-    ],
+    // imgUrls: [
+    //   '../images/czy/shangcheng-lb1.png',
+    //   '../images/czy/shangcheng-lb1.png',
+    //   '../images/czy/shangcheng-lb1.png',
+    //   '../images/czy/shangcheng-lb1.png'
+    // ],
+    // imgUrls1: [
+    //   '../images/czy/yj-jxyj1.png',
+    //   '../images/czy/yj-jxyj1.png',
+    //   '../images/czy/yj-jxyj1.png',
+    //   '../images/czy/yj-jxyj1.png'
+    // ],
     swiperIndex: 0 //这里不写第一次启动展示的时候会有问题
   },
   bindchange(e) {
@@ -33,10 +33,11 @@ Page({
     //跳转传参
     var _this = this
     wx.request({
-      url: 'http://localhost:3000/getdataczy',
+      // url: 'http://localhost:3000/getdataczy',
+      url: 'http://localhost:4000/api/des/node',
       success(res) {
         console.log(res.data)
-        _this.setData({ czy: res.data })
+        _this.setData({ czy: res.data.data })
       }
     })
   },

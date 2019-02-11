@@ -3,7 +3,7 @@ const app = getApp()
 Page({
   data: {
     tabbar:{},
-    bannerUrls: ['../images/czy/shangcheng-lb1.png', '../images/czy/shangcheng-lb1.png', '../images/czy/shangcheng-lb1.png'],
+    // bannerUrls: ['../images/czy/shangcheng-lb1.png', '../images/czy/shangcheng-lb1.png', '../images/czy/shangcheng-lb1.png'],
     types: [
       {
         // imgUrl: '../images/icon/jt.png',
@@ -34,50 +34,50 @@ Page({
     love: [],
     loadTimes: 0,
     perLoad: 4,
-    sale: [
-      {
-        type: '距结束还有7天',
-        img: '../images/czy/yj3-bj.png',
-        title: '海南三亚5天4晚自由行 希尔顿泳池房连住 蜈支洲酒店泳池别墅自驾',
-        price: '9999'
-      }, {
-        type: '距结束还有9天',
-        img: '../images/czy/yj3-bj.png',
-        title: '迪拜旅游帆船酒店5678星定制7天私家团旅行含门票餐厅包车直升机',
-        price: '37880'
-      }
-    ],
-    discount:[
-      {img1: '../images/czy/yj3-bj.png',
-      text: '999起! 错峰出发，这个小岛有最美的风景 签证也便利'
-      }, {
-        img1: '../images/czy/yj3-bj.png',
-        text: '999起! 错峰出发，这个小岛有最美的风景 签证也便利'
-      }
-    ],
-    station: [
-      {
-        name: '香港',
-        img: '../images/czy/yj3-bj.png',
-      }, {
-        name: '日本',
-        img: '../images/czy/yj3-bj.png',
-      }, {
-        name: '泰国',
-        img: '../images/czy/yj3-bj.png'
-      }
-    ],
-    love: [
-      {
-        img: '../images/czy/yj3-bj.png',
-        title: '海南三亚5天4晚自由行 希尔顿泳池房连住 蜈支洲酒店泳池别墅自驾',
-        price: '9999'
-      }, {
-        img: '../images/czy/yj3-bj.png',
-        title: '迪拜旅游帆船酒店5678星定制7天私家团旅行含门票餐厅包车直升机',
-        price: '9999'
-      }
-    ],
+    // sale: [
+    //   {
+    //     type: '距结束还有7天',
+    //     img: '../images/czy/yj3-bj.png',
+    //     title: '海南三亚5天4晚自由行 希尔顿泳池房连住 蜈支洲酒店泳池别墅自驾',
+    //     price: '9999'
+    //   }, {
+    //     type: '距结束还有9天',
+    //     img: '../images/czy/yj3-bj.png',
+    //     title: '迪拜旅游帆船酒店5678星定制7天私家团旅行含门票餐厅包车直升机',
+    //     price: '37880'
+    //   }
+    // ],
+    // discount:[
+    //   {img1: '../images/czy/yj3-bj.png',
+    //   text: '999起! 错峰出发，这个小岛有最美的风景 签证也便利'
+    //   }, {
+    //     img1: '../images/czy/yj3-bj.png',
+    //     text: '999起! 错峰出发，这个小岛有最美的风景 签证也便利'
+    //   }
+    // ],
+    // station: [
+    //   {
+    //     name: '香港',
+    //     img: '../images/czy/yj3-bj.png',
+    //   }, {
+    //     name: '日本',
+    //     img: '../images/czy/yj3-bj.png',
+    //   }, {
+    //     name: '泰国',
+    //     img: '../images/czy/yj3-bj.png'
+    //   }
+    // ],
+    // love: [
+    //   {
+    //     img: '../images/czy/yj3-bj.png',
+    //     title: '海南三亚5天4晚自由行 希尔顿泳池房连住 蜈支洲酒店泳池别墅自驾',
+    //     price: '9999'
+    //   }, {
+    //     img: '../images/czy/yj3-bj.png',
+    //     title: '迪拜旅游帆船酒店5678星定制7天私家团旅行含门票餐厅包车直升机',
+    //     price: '9999'
+    //   }
+    // ],
   },
 
   loadMore: function () {
@@ -108,6 +108,14 @@ Page({
    */
   onLoad: function (options) {
       app.editTabbar();
+      var _this = this
+      wx.request({
+        url: 'http://localhost:4000/api/store/index',
+        success(res) {
+          console.log(res.data)
+          _this.setData({ czy: res.data.data })
+        }
+      })
   },
 
   /**

@@ -89,6 +89,11 @@ Page({
     this.data.contentCount = value.length
     $digest(this)
   },
+  handleTag(e){
+    const value = e.detail.value 
+    this.data.tag = value
+    $digest(this)
+  },
   ChooseImg:function (){
       wx.chooseImage({
         count: 3, // 默认9
@@ -118,15 +123,22 @@ Page({
     },
     submitForm(e) {
       const title = this.data.title
+      const tag = this.data.tag
       const content = this.data.content
   
+
       if (title && content) {
         const arr = []
         for (let path of this.data.images) {
           wxUploadFile({
-            url: 'http://localhost:4000/usernode/add',
+            url: 'http://localhost:4000/des/node/add',
             filePath: path,
             name: 'file',
+            formData:{
+               title:title,
+               tag:tag,
+               content:content,
+            }
           })
           wx.navigateTo({
             url: "/pages/youjipage/youjipage",

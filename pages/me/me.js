@@ -17,42 +17,42 @@ Page({
     uploadImgList: [],
     recordFilePath: '',
     pausing: false,
-    userbox: [
-      {
-        imgUrl: '../images/czy/wdshoucang.png',
-        title: '我的收藏'
-      }, {
-        imgUrl: '../images/czy/wdlishi.png',
-        title: '我的历史'
-      }, {
-        imgUrl: '../images/czy/wddingdan.png',
-        title: '我的订单'
-      }
-    ],
-    normalBar: [
-      {
-        img: '../images/czy/wd-youji.png',
-        usertitle: '我的游记'
-      }, {
-        img: '../images/czy/wd-dianping.png',
-        usertitle: '我的点评'
-      }, {
-        img: '../images/czy/wd-wenda.png',
-        usertitle: '我的问答'
-      }, {
-        img: '../images/czy/wd-qianbao.png',
-        usertitle: '钱包'
-      }, {
-        img: '../images/czy/wd-yhj.png',
-        usertitle: '优惠券'
-      }, {
-        img: '../images/czy/wd-xingcheng.png',
-        usertitle: '行程'
-      }, {
-        img: '../images/czy/wd-jyfk.png',
-        usertitle: '建议反馈'
-      }
-    ],
+    // userbox: [
+    //   {
+    //     imgUrl: '../images/czy/wdshoucang.png',
+    //     title: '我的收藏'
+    //   }, {
+    //     imgUrl: '../images/czy/wdlishi.png',
+    //     title: '我的历史'
+    //   }, {
+    //     imgUrl: '../images/czy/wddingdan.png',
+    //     title: '我的订单'
+    //   }
+    // ],
+    // normalBar: [
+    //   {
+    //     img: '../images/czy/wd-youji.png',
+    //     usertitle: '我的游记'
+    //   }, {
+    //     img: '../images/czy/wd-dianping.png',
+    //     usertitle: '我的点评'
+    //   }, {
+    //     img: '../images/czy/wd-wenda.png',
+    //     usertitle: '我的问答'
+    //   }, {
+    //     img: '../images/czy/wd-qianbao.png',
+    //     usertitle: '钱包'
+    //   }, {
+    //     img: '../images/czy/wd-yhj.png',
+    //     usertitle: '优惠券'
+    //   }, {
+    //     img: '../images/czy/wd-xingcheng.png',
+    //     usertitle: '行程'
+    //   }, {
+    //     img: '../images/czy/wd-jyfk.png',
+    //     usertitle: '建议反馈'
+    //   }
+    // ],
   },
  
 
@@ -61,6 +61,14 @@ Page({
    */
   onLoad: function (options) {
     app.editTabbar();
+    var _this = this
+    wx.request({
+      url: 'http://localhost:4000/api/user/index',
+      success(res) {
+        console.log(res.data)
+        _this.setData({ czy: res.data.data })
+      }
+    })
   },
 
   /**
